@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.winner{
+    color: green;
+}
+
+.loser{
+    color: red;
+}
+
+#cover{
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #d49ee4;
+}
+
+h1{
+    margin-left: 90px;
+}
