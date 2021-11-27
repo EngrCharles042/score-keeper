@@ -10,20 +10,25 @@
 </head>
 
 <body>
+    <h2>welcome to the score keeper app!</h2>
     <div id="cover">
-        <img src="" alt="">
+        <img src="images/images (7).jpg" alt="">
         <h1> <span id="p1Display">0</span> to <span id="p2Display">0</span> </h1>
-        <select name="playingTo" id="playingTo">
-            <option value="5">5</option>
-            <option value="7">7</option>
-            <option value="10">10</option>
-            <option value="15">15</option>
-            <option value="20">20</option>
-            <option value="25">25</option>
-        </select>
+        
         <button id="p1Button">+1 player 1</button>
         <button id="p2Button">+1 player 2</button>
-        <button id="reset">reset</button>
+        
+        <div id="start">
+            <select name="playingTo" id="playingTo">
+                <option value="5">5</option>
+                <option value="7">7</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+            </select>
+            <button id="reset">reset</button>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>

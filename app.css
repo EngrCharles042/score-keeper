@@ -1,7 +1,22 @@
-*{
+:root{
+    --green:#27ae60;
+    --black:#2c2c54;
+  }
+  
+  *{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
     box-sizing: border-box;
-}
-
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+  }
+  
+  *::selection{
+    background:var(--green);
+    color:#fff;
+  }
 
 .winner{
     color: green;
@@ -13,7 +28,7 @@
 
 #cover{
     width: fit-content;
-    height: fit-content;
+    height: auto;
     margin: 0 auto;
     border: 2px solid black;
     border-radius: 10px;
@@ -21,5 +36,73 @@
 }
 
 h1{
-    margin-left: 90px;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 100px;
+}
+
+h2 {
+    width: 100%;
+    margin-bottom: 2rem;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-bottom: 5px solid lemonchiffon;
+}
+
+#p1Button, #p2Button {
+    /* display: inline-block; */
+  margin: 1rem;
+  background: var(--green);
+  color: #fff;
+  font-weight: bolder;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+}
+#p1Button:hover, #p2Button:hover {
+    background-color: var(--black);
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+#reset {
+    margin: 1rem;
+    background: #fdfd10;
+    color: #0c0b0b;
+    padding: .8rem 3rem;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+#reset:hover {
+    background-color: #da1414;
+    text-decoration: none;
+    color: #fff;
+}
+
+select{
+    margin: 1rem;
+    background: #fff;
+    color:var(--black);
+    padding: .8rem 3rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer
+}
+
+#start{
+    width: fit-content;
+    margin: 0 auto;
 }
